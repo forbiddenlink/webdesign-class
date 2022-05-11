@@ -1,0 +1,236 @@
+    <!--Elizabeth Emerson
+        Intro to Web Design
+        Unit 2 - Assignment 1
+        index.html
+        04/14/2022
+        This page will consist of an introductory section that welcomes the user to the screen, nav items to get to different areas, daily
+        specials, news about a kitchen upgrade, and a footer with copyright information and contact information-->
+    
+    <!--The document type. Included at the top of all HTML documents-->
+    <!DOCTYPE html>
+    <html lang="en"> <!--Language of the document-->
+        <head> <!--What will be at the top (head) of the page -->
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="logo" content="Sally's Sandwiches and Subs" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Elizabeth Emerson" /> <!--meta is the information about the document. Mine includes name, logo and description-->
+            <meta name="description" content="This is the homesite for Sally's Sandwiches and subs and will contain the main content for the website">
+            <link rel="icon" href="img/sallyslogo.jpeg"> <!--Icon for the Website-->
+            <link rel="stylesheet" href="main.css" type="text/css">
+            
+            <title>Sally's Sandwiches and Subs</title> <!-- Title of the website -->
+            
+
+
+
+        </head>
+        
+            <body> <!--Start of the body for the website-->
+                <header>
+                    <nav aria-label="primary-navigation"> <!-- Nav area for links-->
+                        <ul id="nav"> <!--unordered list, and list items-->
+                            
+                                <li class="nav"><a href="index.html">Home</a></li>                    
+                                <li class="nav"><a href="about.html">About Us</a></li>
+                                <li class="nav"><a href="menu.html">Menu</a></li>
+                                <li class="nav"><a href="services.html">Our Services</a></li> 
+                                <li class="nav"><a href="gallery.html">Gallery</a></li>
+                                <li class="nav"><a href="contact.html">Contact Us</a></li>
+                                <li class="sallyssands"><img src="/img/sallyslogo.jpeg" alt="Sally's Logo"/></li>
+                        </ul>
+                    </nav>
+                <section class="logo-section">
+                <div class="logo">
+                <h1>Sally's Sandwiches and Subs</h1> <!--First Heading for the website-->
+                <div class="logo-img-container">
+                <div class="logoimgs"><img src="img/sandwich.jpg" alt="sandwich pic" title="picture of a sandwich" id="sandwich-img" width="200" height="150"></div> <!-- Three images for the logo-->
+                <div class="logoimgs"><img src="img/ampersand.jpg" alt="and" title="picture of and sign"  id="and-img" width="200" height="150"></div>
+                <div class="logoimgs"><img src="img/sub.jpg" alt="sub" title="picture of sub sandwich" id="sub-img" height="150" width="200"></div>
+                </div>
+            </div>
+            </section>
+                </header>
+
+
+                <main> <!-- start of the main part of the article-->
+                    
+                <article id="about"> <!--article for the website with ID-->                                                                                   
+                        <section id="welcome"> <!-- section with div and heading-->
+                            <div class="welcome-paragraph">
+                                <audio controls>
+                                    <source src="/audio/imagination.mp3" type="audio/mpeg">
+                                    <p>To play this audio, your browser needs to support HTML5.</p>
+                                </audio>
+                                <p>I found this audio at <a target="_blank" href="https://www.ashamaluevmusic.com/no-copyright-music" rel="audio-cite" class="audio-cite">this link</a></p>
+                                    <div id="background-images">
+                                <h2>Let Your Appetite Needs Travel No Further!</h2>
+                            
+                        <p class="first"> <!--paragraph about sally's sandwiches and subs-->
+                        Welcome to Sally's Sandwiches and Sub's Website. We offer the <strong>best</strong> sandwiches around! Not only do we have 
+                        the freshest ingredients, but we also slice our meat <em>right in front of you</em>, so that you always know you are getting
+                        the best sandwich or sub possible. We have many services, including catering, reservations, dine in, and take out. Check out our services page to find out more!</p>
+                                    </div>
+                            </div>
+                                    </section>
+                                    
+                        <section class="video-section">
+                            <h3 class="video-heading">Here is a short video of one of our employees enjoying one of our sandwiches:</h3>
+                        <video controls>
+                            <source src="/video/chewing.mp4" type="video/mp4">
+                            Your browser does not support mp4 videos. Please change your browser to view the video.
+                        </video>
+                        <div class="video-caption">Video found at https://www.pexels.com</div>
+                        
+                        </section>
+                        <br>
+                        <section class="offering-section">
+                            
+                        <ul class="offering"> <!-- unordered list and list items-->
+                            <li class="blue"><strong>We:</strong></li>
+                            <li class="pink">*Serve daily discounts on "sandwich of the day"</li>
+                            <li class="blue">*Offer meal combos</li>
+                            <li class="pink">*Have dine-in options available</li>
+                            <li class="blue">*Offer takeout</li>
+                            <li class="pink">*Offer delivery</li>
+                        </ul>
+                        </section>
+
+                            <br>
+                            <section class="patio-section">
+                            <article id="patiodining">
+                            <h4>Our newest feature: Patio Dining!</h4>
+                            <img src="img/restaurant.jpg" alt="restaurant" title="picture of restaurant" id="restaurant-img" height="300" width="300">
+                            
+                            <br>
+                            <br>
+
+                            <h5><em>*Open daily from 7AM til 7PM!</em></h5>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            </article>
+                            </section>
+                    
+
+                    <br>
+                    <br>
+
+                    <section id="explore"> <!-- second section with div and heading-->
+
+                        <p class="second">
+                            Please explore the website, check out the menu, or call us today for your hunger needs!
+                        </p>
+
+                    </section>
+                    </article>
+                <br />
+                <br>
+
+                <section id="specials"> <!--third section, includes specials of the week-->
+                    <img src="img/specials.jpg" alt="specials" title="picture of special sign" id="specials-img" width="200" height="150" 
+                    loading="lazy">
+                    <h3><u>Daily Specials:</u></h3>
+                    
+                    <dl id="specials-list"> <!--description list and contents-->
+                        <dt><b>Monday</b></dt> 
+                            <dd>Roast Beef Sandwich</dd>
+                        <dt><b>Tuesday</b></dt>
+                            <dd>Reuben</dd>
+                        <dt><b>Wednesday</b></dt> 
+                            <dd>Pulled Pork</dd>
+                        <dt><b>Thursday</b></dt>
+                            <dd>Chicken Bacon Ranch</dd>
+                        <dt><b>Friday</b></dt>
+                            <dd>Breaded Baked Cod</dd>
+                        <dt><b>Saturday</b></dt>
+                            <dd>Philly CheeseSteak</dd>
+                        <dt><b>Sunday</b></dt>
+                            <dd>Italian Sub</dd>                   
+                    </dl>
+                    Add fries or homemade chips to a daily special for only $1.50!
+                    <br />
+                    <br />
+                    <a href="menu.html" id="menu-link"> View Full Menu</a>
+                    <br>
+                    <br>
+                </section>
+
+                <!--Table for rows on homepage -->
+                <section class="prices-section">
+                <table id="prices-table">
+                    <tr>
+                    <th>Our Prices:</th>
+                </tr>
+
+                    <tr>
+                        <td>Sandwiches: $6.50</td>
+                    </tr>
+                    <tr>
+                        <td>Subs: $10</td>
+                    </tr>
+                    <tr>
+                        <td>Daily Special: $6</td>
+                    </tr>
+                    <tr>
+                    <td>Sides: $3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Drinks: $2</td>
+                    </tr>
+                </table>
+            </section>
+                <br>
+                <br>
+                <br>
+                <br>
+
+
+                </main>
+
+
+
+                <aside> <!-- aside used as a "sidebar" for news-->
+                    <section class="sidebar-section">
+                    <h3>News:</h3>
+                    <br>
+                    <p>We are upgrading our kitchen! Stay tuned for updates!</p>
+                    <ul>
+                        <li>Brand New Kitchen Appliances</li>
+                        <li>New Kitchen Flooring</li>
+                        <li>New Computer Systems</li>
+                    <li><s>We are also upgrading our menu items and prices</s> We just finished updating
+                    our menu - check it out!</li>
+                    </ul>
+                    </section>
+                </aside>
+
+
+
+
+                <br>
+                <section class="back-section">
+                <a href="#" id="top-link">Back to top</a> <!-- link to get back to the top of the page-->
+                <br>
+                <br>
+                </section>
+
+                <section class="footer-section">
+            <footer> <!-- footer that includes copyright information, address, telephone number, and email-->
+                Copyright &copy; 2022 &nbsp;
+                <address>Sally's Sandwiches and Subs
+                123 Daisy Lane
+                Somewhere, NY, 12345 &nbsp;</address>
+                <a href="tel:+1234567890">(123) 456-7890 &nbsp;</a>
+                <a href="mailto:sallyssands@fakeemail.com">sallyssands@fakeemail.com</a>
+
+                <hr />
+                
+                
+            </footer>
+                </section>
+            <br />           
+            </body>
+        
+    </html>
